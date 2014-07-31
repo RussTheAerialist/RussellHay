@@ -1,0 +1,48 @@
+@import "fonts";
+
+h1, h2, h3, h4, h5 {
+	font-family: "Header";
+}
+
+.header {
+	background: #333;
+	color: #fff;
+
+	a {
+		text-decoration: none;
+	}
+
+	h1 {
+		vertical-align: baseline;
+		
+		font-size: 2.5rem;
+		line-height: 1.5em;
+		margin-bottom: 0.125em;
+
+		a {
+			color: #fff;
+			transition: color 1s ease;
+
+			&:hover {
+				color: #0040ff;
+			}
+		}
+	}
+
+	.menu {
+		line-height: 1.5em;
+		color: #888;
+		margin-top: 1rem;
+		vertical-align: bottom;
+		font-size: 1.5rem;
+
+		a {
+			color: #888;
+			transition: color 1s ease;
+
+			&:hover {
+				color: #0040ff;
+			}
+		}
+	}
+}

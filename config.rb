@@ -13,6 +13,7 @@ activate :blog do |blog|
     blog.permalink = "{category}/{title}/index.html"
     blog.sources = "blog/{category}/{title}.html"
     blog.taglink = "tag/{tag}"
+    blog.paginate = true
 end
 
 configure :build do
