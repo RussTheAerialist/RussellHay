@@ -2,3 +2,26 @@ language: ruby
 rvm:
 - 2.1
 script: bundle exec middleman build
+deploy:
+  - provider: s3
+    access_key_id:
+      secure: fBej2lw+o8VaJfwAhgkbTqHZM3IHkXtRhvimB/HL3Rg+yFh9eShmW3V1aX8tomn7JjOSVtrL6X4AtGk3uLiir+oTLQX67Dk2U0X8pOXdhpoJ5I4Iga4Bjh3a+4cCaZRgEB57YTEmLMmiMxjSnJUYmZScDupF5ZiF6iFujuh4IAo=
+    secret_access_key:
+      secure: mpvDNlAO7mfSkZQlpfqiU5tmlpRvQIoSLDqhaKG8j3TuVPw6C285ywoZjcEMjoFF9d5GN7F6IXne9KHw7g0IiYtNHHNJR3yC+2XLpkTeYU/2TcEOKf8wZe6MviJnoqoyhtRq3cbYuXX3GA6lRWNfOApeiIRB/gaol0Hv6M7KOgo=
+    bucket: russellhay.com
+    skip_cleanup: true
+    endpoint: russellhay.com.s3-website-us-west-2.amazonaws.com
+    region: us-west-2
+    on:
+      branch: master
+  - provider: s3
+    access_key_id:
+      secure: fBej2lw+o8VaJfwAhgkbTqHZM3IHkXtRhvimB/HL3Rg+yFh9eShmW3V1aX8tomn7JjOSVtrL6X4AtGk3uLiir+oTLQX67Dk2U0X8pOXdhpoJ5I4Iga4Bjh3a+4cCaZRgEB57YTEmLMmiMxjSnJUYmZScDupF5ZiF6iFujuh4IAo=
+    secret_access_key:
+      secure: mpvDNlAO7mfSkZQlpfqiU5tmlpRvQIoSLDqhaKG8j3TuVPw6C285ywoZjcEMjoFF9d5GN7F6IXne9KHw7g0IiYtNHHNJR3yC+2XLpkTeYU/2TcEOKf8wZe6MviJnoqoyhtRq3cbYuXX3GA6lRWNfOApeiIRB/gaol0Hv6M7KOgo=
+    bucket: beta.russellhay.com
+    skip_cleanup: true
+    endpoint: beta.russellhay.com.s3-website-us-west-2.amazonaws.com
+    region: us-west-2
+    on:
+      branch: development
