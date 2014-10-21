@@ -1,0 +1,29 @@
+mixin sec(name, id, ...items)
+  .item.section(id=id)
+    h2= name
+    .row
+       ul&attributes(attributes)
+         each val in items
+           li
+             a(href="#")= val
+         li
+             a(href="#") more…
+doctype html
+html(lang='en')
+  head
+    block head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+      meta(name='viewport', content='width=device-width')
+      link(rel="stylesheet" href="/css/font.css")
+      link(rel="stylesheet" href="/css/main.css")
+  body
+    #container
+       .item.header
+         a(href="#")
+           h1 Russell Hay
+       +sec("Code Slinger", "code-slinger", 1, 2, 3, 4, 5)
+       +sec("Visual Artist", "visual-artist", 1, 2, 3, 4, 5)(class="multimedia")
+       +sec("Maker", "maker", 1, 2, 3, 4, 5)(class="multimedia")
+       +sec("Mover", "mover", 1, 2, 3, 4, 5)(class="multimedia")
+       .item.footer &nbsp;
