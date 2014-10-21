@@ -1,9 +1,9 @@
-mixin sec(name, id, ...items)
-  .item.section(id=id)
+mixin header(name, x)
+  .item.section(id=x)
     h2= name
     .row
        ul&attributes(attributes)
-         each val in items
+         each val in [1,2,3,4,5]
            li
              a(href="#")= val
          li
@@ -22,8 +22,8 @@ html(lang='en')
        .item.header
          a(href="#")
            h1 Russell Hay
-       +sec("Code Slinger", "code-slinger", 1, 2, 3, 4, 5)
-       +sec("Visual Artist", "visual-artist", 1, 2, 3, 4, 5)(class="multimedia")
-       +sec("Maker", "maker", 1, 2, 3, 4, 5)(class="multimedia")
-       +sec("Mover", "mover", 1, 2, 3, 4, 5)(class="multimedia")
+       +header("Code Slinger", "code-slinger")
+       +header("Visual Artist", "visual-artist")(class="multimedia")
+       +header("Maker", "maker")(class="multimedia")
+       +header("Mover", "mover")(class="multimedia")
        .item.footer &nbsp;
