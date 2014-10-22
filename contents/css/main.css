@@ -53,6 +53,6 @@ transition: background-color 0.5s, height .75s cubic-bezier(0.860, 0.000, 0.070,
      #code-slinger:hover, #maker:hover, #visual-artist:hover, #mover:hover
      { background: #0b2650; }
 
-     .center { bottom: 0.25em; font-size: 2.5em; text-align: center; line-height: 1.5em;}
+     .center { height: 100%; font-size: 2.5em; text-align: center; line-height: 1.5em;}
      .center span { margin-top: 85px; opacity: 0; display: block;}
      .center:hover span { opacity: 1; background-color: rgba(10, 10, 10, 0.75); color: #dddddd;}

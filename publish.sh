@@ -1,5 +1,5 @@
 #!/bin/sh
 
-wintersmith build && \
+wintersmith build -c config.production.json && \
 cd build && \
 rsync -vrzhe ssh --delete --progress . rhay@russellhay.com:/home/www/comingsoon/_/
