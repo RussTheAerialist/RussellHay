@@ -7,6 +7,7 @@ transition: background-color 0.5s, height .75s cubic-bezier(0.860, 0.000, 0.070,
      }
      div, h1, h2, ul { margin: 0; padding: 0; }
      h1, h2 { font-family: "header"; }
+     div, p, a, li { font-family: "body"}
 
      .container {
         display: flex;
@@ -17,7 +18,7 @@ transition: background-color 0.5s, height .75s cubic-bezier(0.860, 0.000, 0.070,
         align-content: stretch;
      }
      .item { min-height: 25%; flex: 1; display: flex; 
-             flex-direction: column; justify-content: center; }
+             flex-direction: column; justify-content: space-between; }
      .section { box-shadow: 0 0 5px 0 #0b2650; }
      #code-slinger {
        border-top-left-radius: 5px;
@@ -28,8 +29,10 @@ transition: background-color 0.5s, height .75s cubic-bezier(0.860, 0.000, 0.070,
        border-bottom-right-radius: 5px;
      }
      .item .row { height: 0; overflow: hidden; }
-     .row ul { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; align-content: stretch; list-style: none; padding-bottom: 1.5rem; }
-     .row li { border: 1px solid black; width: 25%; margin: 1rem; margin-bottom: 0; }
+     .row ul { display: flex; flex-wrap: wrap; justify-content: flex-start; width: 100%;
+        align-items: stretch; align-content: stretch; list-style: none; padding-bottom: 1.5rem; }
+     #code-slinger .row { flex-direction: column; }
+     .row li { margin: 1rem; margin-bottom: 0; }
      .row ul.multimedia li { height: 216px; width: 384px; background: #eeeeee; }
      .row li a { display: block; height: 100%; width: 100%; }
      .item a { text-decoration: none; }
@@ -37,6 +40,9 @@ transition: background-color 0.5s, height .75s cubic-bezier(0.860, 0.000, 0.070,
      .header { flex-grow: 2; }
      .header a { color: #eeeeee; }
      .footer { flex-grow: 2; }
+     .refer, .more a { font-size: 2.5em; line-height: 2em; color: #eeeeee; text-decoration: none; }
+     .more {  align-self: flex-end;}
+     .refer a:hover, .more a:hover { color: #dddddd; }
      /* Medium Blue */
      #code-slinger, #maker
      { background: #1a3560; }
@@ -46,3 +52,7 @@ transition: background-color 0.5s, height .75s cubic-bezier(0.860, 0.000, 0.070,
      /* Dark Blue */
      #code-slinger:hover, #maker:hover, #visual-artist:hover, #mover:hover
      { background: #0b2650; }
+
+     .center { bottom: 0.25em; font-size: 2.5em; text-align: center; line-height: 1.5em;}
+     .center span { margin-top: 85px; opacity: 0; display: block;}
+     .center:hover span { opacity: 1; background-color: rgba(10, 10, 10, 0.75); color: #dddddd;}

@@ -6,7 +6,9 @@
     "description": "Oh Crap, it's Russell, with a website again!"
   },
   "plugins": [
-    "./plugins/paginator.coffee"
+    "./plugins/paginator.coffee",
+    "wintersmith-node-sass",
+    "wintersmith-tag"
   ],
   "require": {
     "moment": "moment",
@@ -21,6 +23,10 @@
     "smartypants": true
   },
   "paginator": {
-    "perPage": 3
+    "perPage": 5
+  },
+  "tag": {
+    "template": "tag-index.jade",
+    "perPage": 5
   }
 }

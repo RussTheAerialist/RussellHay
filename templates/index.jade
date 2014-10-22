@@ -3,11 +3,22 @@ mixin header(name, x)
     h2= name
     .row
        ul&attributes(attributes)
-         each val in [1,2,3,4,5]
-           li
-             a(href="#")= val
-         li
-             a(href="#") more…
+         block
+mixin img_post(p)
+ li(style="background: url(#{p.url}#{p.metadata.header})")
+  a.center(href=p.url)
+   span= p.title
+mixin video_post(p)
+ li video #{p.metadata.video}
+mixin plain_post(p)
+ li plain post #{p}
+mixin post(p)
+  if p.metadata.header
+   +img_post(p)
+  else if p.metadata.video
+   +video_post(p)
+  else
+   +plain_post(p)
 doctype html
 html(lang='en')
   head
@@ -23,7 +34,19 @@ html(lang='en')
          a(href="#")
            h1 Russell Hay
        +header("Code Slinger", "code-slinger")
+         li
+          a.refer(href="http://github.com/RussTheAerialist")
+           | Github
+         li
+          a.refer(href="http://bitbucket.org/russellhay")
+           | BitBucket
+         if env.helpers.getTagHome("code")
+          li.more
+           a(href=env.helpers.getTagHome("code").url) Blog &rarr;
        +header("Visual Artist", "visual-artist")(class="multimedia")
+        - var posts = env.helpers.getArticlesByTag(contents, "visual")
+        each post in posts
+         +post(post)
        +header("Maker", "maker")(class="multimedia")
        +header("Mover", "mover")(class="multimedia")
        .item.footer &nbsp;
