@@ -2,7 +2,11 @@
 title: "Code Retreat 2014"
 author: Russell Hay
 date: 2014-11-15
-tags: code,code retreat,programming,games
+tags:
+  - code
+  - code retreat
+  - programming
+  - games
 ---
 ## What is Code Retreat?
 
