@@ -8,16 +8,17 @@ mixin img_post(p)
  li(style="background: url(#{p.url}#{p.metadata.header})")
   a.center(href="#{p.url}") &nbsp;
 mixin video_post(p)
- li video #{p.metadata.video}
+ li video #{p.video}
 mixin plain_post(p)
- li plain post #{p}
+ li plain post #{p.title}
 mixin post(p)
-  if p.metadata.header
-   +img_post(p)
-  else if p.metadata.video
-   +video_post(p)
-  else
-   +plain_post(p)
+  =p
+  //if p.header
+  // +img_post(p)
+  //else if p.video
+  // +video_post(p)
+  //else
+  // +plain_post(p)
 doctype html
 html(lang='en')
   head
@@ -43,9 +44,9 @@ html(lang='en')
            if code_tag
              a(href=url_for(code_tag.path)) Blog &rarr;
        +header("Art", "visual-artist")(class="multimedia")
-       // - var posts = helpers.getArticlesByTag(contents, "visual")
-       // each post in posts
-       //  +post(post)
+         - var art_posts = site.tags.findOne({$and: [{ name: "visual" }]}).posts.slice(0,5)
+         for p in art_posts
+           +post(p)
        +header("Make", "maker")(class="multimedia")
        +header("Move", "mover")(class="multimedia")
        .item.footer &nbsp;
