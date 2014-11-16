@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+    head
+        block head
+            meta(charset='utf-8')
+            meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+            meta(name='viewport', content='width=device-width')
+        != css(["css/font.css", "css/main.css"])
+    body
+        #container
+            .header
+                h1 Russell Hay
+                    span
+                        span.code.accent
+                            a(href=url_for()) code
+                        |,
+                        span.art.accent
+                            a(href=url_for()) art
+                        |,
+                        span.make.accent
+                            a(href=url_for()) make
+                        |,
+                        span.move.accent
+                            a(href=url_for()) move
+            .body!= body
+            .footer
+                | Something here

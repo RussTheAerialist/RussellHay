@@ -1,0 +1,75 @@
+@import "colors";
+
+@mixin box-sizing($type: border-box) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  -o-box-sizing: $type;
+  -ms-box-sizing: $type;
+  box-sizing: $type;
+}
+
+@mixin nav-url($color, $hover_color) {
+  color: $hover_color;
+
+  &:hover { color: $color; }
+}
+
+* {
+  @include box-sizing();
+}
+
+body {
+  font-size: 100%;
+  line-height: 1.5em;
+  background: #090909;
+  color: #eaeaea;
+  max-width: 50em;
+  margin: auto;
+}
+
+h1, h2, .header a {
+  font-family: "body";
+  text-decoration: none;
+}
+
+.header {
+  h1 {
+    font-size: 3rem;
+    line-height: 1.5em;
+
+    & > span {
+      float: right;
+      font-size: 1.5rem;
+
+      span {
+        padding-left: 1em;
+      }
+    }
+  }
+
+}
+
+body, div, p, a, li {
+  font-family: "header";
+}
+
+.accent {
+  font-weight: normal;
+
+  &.code a {
+    @include nav-url($blue0, $blue2);
+  }
+
+  &.art a {
+    @include nav-url($pink0, $pink2);
+  }
+
+  &.make a {
+    @include nav-url($green0, $green2);
+  }
+
+  &.move a {
+    @include nav-url($orange0, $orange2);
+  }
+
+}

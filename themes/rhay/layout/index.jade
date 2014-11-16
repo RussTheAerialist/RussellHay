@@ -1,53 +1,6 @@
-mixin header(name, x)
-  .item.section(id=x)
-    h2= name
-    .row
-       ul&attributes(attributes)
-         block
-mixin img_post(p)
- li(style="background: url(#{p.url}#{p.metadata.header})")
-  a.center(href="#{p.url}") &nbsp;
-mixin video_post(p)
- li video #{p.video}
-mixin plain_post(p)
- li plain post #{p.title}
-mixin post(p)
-  =p
-  //if p.header
-  // +img_post(p)
-  //else if p.video
-  // +video_post(p)
-  //else
-  // +plain_post(p)
-doctype html
-html(lang='en')
-  head
-    block head
-      meta(charset='utf-8')
-      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-      meta(name='viewport', content='width=device-width')
-      != css(["css/font.css", "css/main-sass.css"])
-  body
-    #container
-       .item.header
-         a(href="#")
-           h1 Russell Hay
-       +header("Code", "code-slinger")
-         li
-          a.refer(href="http://github.com/RussTheAerialist")
-           | Github
-         li
-          a.refer(href="http://bitbucket.org/russellhay")
-           | BitBucket
-          li.more
-           - var code_tag = site.tags.findOne({$and: [{ name: "code" }]})
-           if code_tag
-             a(href=url_for(code_tag.path)) Blog &rarr;
-       +header("Art", "visual-artist")(class="multimedia")
-         - var art_posts = site.tags.findOne({$and: [{ name: "visual" }]}).posts.slice(0,5)
-         for p in art_posts
-           +post(p)
-       +header("Make", "maker")(class="multimedia")
-       +header("Move", "mover")(class="multimedia")
-       .item.footer &nbsp;
-    != js("js/app.js")
+ul.post_list
+  - page.posts.each(function(post) {
+    li
+      = post
+      - var main_tag = post.tags.first()
+  - })
