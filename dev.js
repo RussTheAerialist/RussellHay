@@ -3,8 +3,8 @@ var watch = require("metalsmith-watch");
 var serve = require("metalsmith-serve");
 
 site
-.use(watch())
 .use(serve())
+.use(watch())
 
 .build(function(err) {
   if (err) throw err;
