@@ -5,10 +5,8 @@ mixin header(name, x)
        ul&attributes(attributes)
          block
 mixin img_post(p)
- li(style="background: url(#{locals.url}#{p.url}#{p.metadata.header})")
-  a.center(href=p.url)
-   = p.url
-   span= p.title
+ li(style="background: url(#{locals.subpath}#{p.url}#{p.metadata.header})")
+  a.center(href="#{locals.subpath}#{p.url}") &nbsp;
 mixin video_post(p)
  li video #{p.metadata.video}
 mixin plain_post(p)
@@ -28,13 +26,13 @@ html(lang='en')
       meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
       meta(name='viewport', content='width=device-width')
       link(rel="stylesheet" href="#{locals.url}css/font.css")
-      link(rel="stylesheet" href="#{locals.url}css/main.css")
+      link(rel="stylesheet" href="#{locals.url}css/main-sass.css")
   body
     #container
        .item.header
          a(href="#")
            h1 Russell Hay
-       +header("Code Slinger", "code-slinger")
+       +header("Code", "code-slinger")
          li
           a.refer(href="http://github.com/RussTheAerialist")
            | Github
@@ -43,12 +41,12 @@ html(lang='en')
            | BitBucket
          if env.helpers.getTagHome("code")
           li.more
-           a(href=env.helpers.getTagHome("code").url) Blog &rarr;
-       +header("Visual Artist", "visual-artist")(class="multimedia")
+           a(href=locals.subpath + env.helpers.getTagHome("code").url) Blog &rarr;
+       +header("Art", "visual-artist")(class="multimedia")
         - var posts = env.helpers.getArticlesByTag(contents, "visual")
         each post in posts
          +post(post)
-       +header("Maker", "maker")(class="multimedia")
-       +header("Mover", "mover")(class="multimedia")
+       +header("Make", "maker")(class="multimedia")
+       +header("Move", "mover")(class="multimedia")
        .item.footer &nbsp;
   | <script src="#{locals.url}js/app.js"></script>

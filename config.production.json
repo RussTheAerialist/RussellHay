@@ -1,12 +1,12 @@
 {
   "locals": {
     "url": "/_/",
+    "subpath": "/_",
     "name": "RussellHay.com",
     "owner": "Russell Hay",
     "description": "Oh Crap, it's Russell, with a website again!"
   },
   "plugins": [
-    "./plugins/paginator.coffee",
     "wintersmith-node-sass",
     "wintersmith-tag"
   ],
