@@ -3,7 +3,7 @@ title: "Kneading Flesh"
 author: Russell Hay
 date: 2014-08-10
 tags:
-  - visual
+  - art
   - video
   - art
   - film

@@ -9,13 +9,34 @@
 }
 
 @mixin nav-url($color, $hover_color) {
-  color: $hover_color;
+  a {
+    color: $hover_color;
+    text-decoration: none;
 
-  &:hover { color: $color; }
+    &:hover {
+      color: $color;
+    }
+  }
+}
+
+@mixin set-color($color, $hover_color) {
+  @include nav-url($color, $hover_color);
+  h1, .post-matter { border-color: $hover_color; }
+  h2 { color: #ffffff; }
+  strong { font-family: "body"; font-size: 1.15rem;}
+}
+
+@mixin post-link($color) {
+  border-color: $color;
+  @include nav-url($color, #eaeaea);
 }
 
 * {
   @include box-sizing();
+}
+
+.right {
+  float: right;
 }
 
 body {
@@ -23,7 +44,7 @@ body {
   line-height: 1.5em;
   background: #090909;
   color: #eaeaea;
-  max-width: 50em;
+  max-width: 45em;
   margin: auto;
 }
 
@@ -36,6 +57,7 @@ h1, h2, .header a {
   h1 {
     font-size: 3rem;
     line-height: 1.5em;
+    & > a { color: #eaeaea; &:hover { color: #fff; }}
 
     & > span {
       float: right;
@@ -53,23 +75,124 @@ body, div, p, a, li {
   font-family: "header";
 }
 
+.code {
+    @include set-color($blue0, $blue2);
+}
+
+.art {
+    @include set-color($pink0, $pink2);
+}
+
+.make {
+    @include set-color($green0, $green2);
+}
+
+.move {
+    @include set-color($orange0, $orange2);
+}
+
 .accent {
   font-weight: normal;
+}
 
-  &.code a {
-    @include nav-url($blue0, $blue2);
+.index {
+  ul {
+    margin: 0; padding: 0;
+    margin-bottom: 3em;
   }
 
-  &.art a {
-    @include nav-url($pink0, $pink2);
+  li {
+    font-family: "body";
+
+    a {
+      font-family: "body";
+    }
+
+    font-size: 1.5em;
+    line-height: 1.5em;
+    vertical-align: baseline;
+    list-style: none;
+    margin: 0;
+    padding-left: 1em;
+    border-left: 10px solid;
+    &.code {
+      @include post-link($blue2);
+    }
+    &.art {
+      @include post-link($pink2);
+    }
+    &.make {
+      @include post-link($green2);
+    }
+    &.move {
+      @include post-link($orange2);
+    }
+    .date {
+      font-size: 0.75rem;
+      vertical-align: middle;
+      float: right;
+    }
+  }
+}
+
+.post {
+  h1 { font-size: 3rem; line-height: 1.5em; border-bottom-width: 5px;
+    border-bottom-style: solid; }
+  h2 { font-size: 1.5rem; line-height: 1.5em; margin-bottom: 0; padding-bottom: 0; }
+  p {
+    padding: 0; margin: 0;
+    margin-bottom: 1.25em;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+  }
+  li {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+  }
+  ul {
+    padding-left: 0;
+    margin-right: 0;
+    list-style: square;
+    padding-left: 1em;
   }
 
-  &.make a {
-    @include nav-url($green0, $green2);
+  sup {
+    margin-left: 0.25em;
   }
 
-  &.move a {
-    @include nav-url($orange0, $orange2);
+  p + h2 {
+    margin-top: 1.5em;
   }
 
+  a {
+    font-weight: bold;
+
+    &[href^="http"]:after {
+      content: "\2191";
+      font-size: 0.75em;
+      vertical-align: text-bottom;
+      padding-left: 0.25em;
+    }
+  }
+
+  .post-matter {
+    border-top-style: solid;
+    border-top-width: 5px;
+    margin-bottom: 1em;
+
+    ul {
+      list-style: none;
+      margin: 0; padding: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+
+      li {
+        &.right {
+          align-left: flex-end;
+        }
+      }
+    }
+  }
 }

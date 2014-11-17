@@ -1,6 +1,15 @@
-ul.post_list
-  - page.posts.each(function(post) {
-    li
-      = post
-      - var main_tag = post.tags.first()
-  - })
+extends base
+
+block vars
+  - var bodyclass = "index";
+
+block body
+  ul.post_list
+    - page.posts.each(function(post) {
+    - var main_tag = post.tags.first().name
+    li(class=main_tag)
+      a(href=url_for(post.path))
+        =post.title
+      span.date
+        =date(post.date, "YYYY MMM DD")
+    - })

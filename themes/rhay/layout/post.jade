@@ -1,0 +1,19 @@
+extends base
+
+block vars
+    - var bodyclass = page.tags.first().name;
+
+block body
+    .post
+      h1.header= page.title
+      article.article!= page.content
+      .post-matter
+          ul
+            li
+              | Posted on&nbsp;
+              = date(page.date, "YYYY MMM DD")
+            li.right
+              - var tags = page.tags.map(function(p) {
+              - return "<a href=\"" + url_for(p.path) + "\">" + p.name + "</a>";
+              - }).join(", ");
+              != tags

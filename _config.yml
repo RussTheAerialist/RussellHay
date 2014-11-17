@@ -91,4 +91,15 @@ node_sass:
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: rsync
+  host: russellhay.com
+  user: rhay
+  root: /home/www/comingsoon/_/
+  delete: true
+  verbose: true
+  ignore_errors: false
+
+feed:
+  type: rss2
+  path: feed.rss
+  limit: 20
