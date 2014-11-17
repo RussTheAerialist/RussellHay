@@ -18,5 +18,10 @@ hexo.extend.helper.register("video", function(post) {
         return '<div class="video-container"><iframe src="//player.vimeo.com/video/' + id + '" frameborder="0" allowfullscreen></iframe></div>';
     }
 
+    if (vtype === 'dailymotion') {
+        return '<div class="video-container"><iframe width="560" height="315" frameborder="0" allowfullscreen src="//www.dailymotion.com/embed/video/' + id + '"></iframe>';
+
+    }
+
     return id;
 });
