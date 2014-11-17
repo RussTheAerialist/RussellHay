@@ -8,6 +8,10 @@ html(lang='en')
             meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
             meta(name='viewport', content='width=device-width')
         != css(["css/font.css", "css/main.css"])
+        if page.title
+            title= page.title + " :: " + config.title + " - " + config.subtitle
+        else
+            title= config.title + " - " + config.subtitle
     body(class=bodyclass)
         #container
             .header
