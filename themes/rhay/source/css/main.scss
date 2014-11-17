@@ -75,19 +75,19 @@ body, div, p, a, li {
   font-family: "header";
 }
 
-.code {
+.code, span > span.code {
     @include set-color($blue0, $blue2);
 }
 
-.art {
+.art, span > span.art {
     @include set-color($pink0, $pink2);
 }
 
-.make {
+.make, span > span.make {
     @include set-color($green0, $green2);
 }
 
-.move {
+.move, span > span.move {
     @include set-color($orange0, $orange2);
 }
 
@@ -136,6 +136,15 @@ body, div, p, a, li {
 }
 
 .post {
+  .video-container {
+    width: 640px;
+    height: 480px;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
   h1 { font-size: 3rem; line-height: 1.5em; border-bottom-width: 5px;
     border-bottom-style: solid; }
   h2 { font-size: 1.5rem; line-height: 1.5em; margin-bottom: 0; padding-bottom: 0; }

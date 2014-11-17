@@ -5,8 +5,8 @@ block vars
 
 block body
     .post
-      h1.header= page.title
-      article.article!= page.content
+      - var post_template = "_partials/" + get_post_template(page)
+      != partial(post_template, {post: page})
       .post-matter
           ul
             li
