@@ -188,20 +188,32 @@ body, div, p, a, li {
     border-top-style: solid;
     border-top-width: 5px;
     margin-bottom: 1em;
+  }
+}
 
-    ul {
-      list-style: none;
-      margin: 0; padding: 0;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-around;
+.post-matter, .footer {
+  ul, .footer_container {
+    list-style: none;
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 
-      li {
-        &.right {
-          align-left: flex-end;
-        }
+    li, .footer_item {
+      &.right {
+        align-left: flex-end;
       }
     }
+  }
+}
+
+.footer_item {
+  font-family: "body";
+  color: lighten(#090909, 15%);
+  & > a {
+    font-family: "body";
+    text-decoration: none;
+    color: lighten(#090909, 25%);
   }
 }

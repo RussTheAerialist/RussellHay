@@ -30,4 +30,20 @@ html(lang='en')
                     h1 all posts tagged with #{page.tag}
                 block body
             .footer
-                | Something here
+              .footer_container
+                 .footer_item
+                    a(href=url_for("about")) about me
+                    br
+                    a(rel="feed", href=url_for("feed.rss")) feed
+                    br
+                    a(rel="license", href="http://creativecommons.org/licenses/by-nc-nd/4.0/")
+                      img(alt="Creative Commons License", src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png")
+                 .footer_item
+                    | twitter:
+                    a(href="http://twitter.com/RussellHay") @RussellHay
+                    br
+                    | github:
+                    a(href="http://github.com/RussTheAerialist") RussTheAerialist
+                    br
+                    | bitbucket:
+                    a(href="http://bitbucket.org/russellhay") russellhay
