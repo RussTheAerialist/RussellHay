@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  .header > h1 > span {
+    display: block;
+    float: none;
+
+    & > span {
+      padding-left: 0;
+    }
+
+    span + span:before {
+      content: " ";
+    }
+
+  }
+  .index li {
+    margin-bottom: 1px;
+    .date {
+      display: block;
+      float: none;
+    }
+  }
+}
