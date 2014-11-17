@@ -13,7 +13,7 @@ language:
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://russellhay.com
-root: /_
+#root: /
 permalink: :year/:title/
 tag_dir: tags
 archive_dir: archives
@@ -94,7 +94,7 @@ deploy:
   type: rsync
   host: russellhay.com
   user: rhay
-  root: /home/www/comingsoon/_/
+  root: /home/www/comingsoon/
   delete: true
   verbose: true
   ignore_errors: false
