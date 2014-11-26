@@ -109,6 +109,12 @@ body, div, p, a, li {
 
     a {
       font-family: "body";
+      text-decoration: none;
+      color: #EAEAEA;
+
+      &:hover {
+        color: #fff;
+      }
     }
 
     font-size: 1.5em;
