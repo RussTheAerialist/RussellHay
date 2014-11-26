@@ -56,5 +56,12 @@
     border-top-style: solid;
     border-top-width: 5px;
     margin-bottom: 1em;
+    li a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            color: #EAEAEA;
+        }
+    }
   }
 }
