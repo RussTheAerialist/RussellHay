@@ -8,6 +8,7 @@
     "hexo-migrator-wordpress": "^0.1.1",
     "hexo-renderer-jade": "*",
     "hexo-renderer-marked": "*",
-    "hexo-renderer-sass": "*"
+    "hexo-renderer-sass": "*",
+    "hexo-gzip": "*"
   }
 }
