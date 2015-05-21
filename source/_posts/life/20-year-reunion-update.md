@@ -20,16 +20,24 @@ only stay in touch with one of them
 * Job at V-Servers, porting servers, networking, hacking, kernel hacking
 * V-Servers merged with Lightrealm, bought by Micron, merged with Hostpro
 * Live in a house full of hackers
+* Go to England, fall in love with photography
 * Meet my husband, Cord
 * Hacker House falls apart, everyone scatters to the wind
 * Hostpro decides to move all operations to Atlanta, I say fuck that.
 * Start up, Director of Development, Steelgate Systems, founder disappears, moves to Finland
+* Malestorm, a photographer collective of gay male photographers, forms and dissolves
 * Start doing Crew, row like a tall person, get over fear of water, capsize in freezing water, cox'n through a sudden squal.
 * Work for startup game company doing mobile boardgames, server backend, market isn't there yet, startup shuts down
 * Transition to the cellular industry as a data analyst in tech support
 * OMFG worst industry ever, go to work for Real Networks, introduce scrumm to a test tools team
 * Lose a bunch of weight.
+* Starfish Studios starts
+* Get beat up during an Art Walk
+* Starfish Studios ends
 * *Join the motherfucking circus*
+* Open photography studio in the OK Hotel
+* Comcast floods the studio by bursting a water main
+* Close down OK Hotel studio
 * Get outsourced to India
 * Microsoft, Windows Live, Internal Tools team, fun job, great team
 * Buy a house in Seattle
@@ -44,8 +52,11 @@ only stay in touch with one of them
 * Sell our house for a loss
 * Learn to pole dance
 * CA sucks balls, move back to Seattle area
+* Open a studio in Building C
+* Take over management of Building C website, redesign
 * Get married (yay finally legal) in a small ceremony in an old building with great food and lots of drinking and dancing.
 * Tableau IPOs
 * Become a Certified Scrummaster, for whatever that's worth
 * Get MRSA from a small scratch in my arm, worst experience, do not recommend
+* Close down studio in Building C
 * Begin parkour in earnest, continue training to be Dick Grayson
