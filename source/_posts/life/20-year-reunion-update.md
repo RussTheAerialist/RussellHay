@@ -17,7 +17,9 @@ only stay in touch with one of them
 * Work at Intersurf as sys admin
 * Live with Mary (LSMSA class of '96), met Rush
 * Bored in college, drop out, follow Rush to Seattle
+* Start dead [ protocol ] society
 * Job at V-Servers, porting servers, networking, hacking, kernel hacking
+* Win some social engineering contests
 * V-Servers merged with Lightrealm, bought by Micron, merged with Hostpro
 * Live in a house full of hackers
 * Go to England, fall in love with photography
