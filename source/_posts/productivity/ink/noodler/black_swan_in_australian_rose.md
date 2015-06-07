@@ -3,9 +3,9 @@ title: Black Swan in Australian Rose
 date: 2015-06-07 08:00
 summary: A beautiful purple ink that dries fast with less bleed through than others.
 tags:
-  -- art
-  -- life
-  -- productivity
+  - art
+  - life
+  - productivity
 ---
 
 ![Ink Sample Page for Black Swan in Australian Rose](black_swan_in_australian_rose.jpg)
