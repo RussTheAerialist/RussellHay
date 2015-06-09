@@ -1,6 +1,6 @@
 ---
 title: El Lawrence
-date: 2015-06-13 08:00
+date: 2015-06-08 22:15
 summary: A subtle, almost graphite, ink with a yellow tinge
 tags:
   - art
