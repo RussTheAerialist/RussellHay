@@ -2,6 +2,8 @@
 title: "imuduino + Three.js + node = awesome"
 author: Russell Hay
 date: 2015-06-13
+video: LuwXq0XLCk0
+videotype: youtube
 tags:
   - code
   - node

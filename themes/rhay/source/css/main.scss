@@ -90,7 +90,7 @@ body, div, p, a, li {
     @include set-color($green0, $green2);
 }
 
-.move, span > span.move {
+.body, span > span.body {
     @include set-color($orange0, $orange2);
 }
 
@@ -134,7 +134,7 @@ body, div, p, a, li {
     &.make {
       @include post-link($green2);
     }
-    &.move {
+    &.body {
       @include post-link($orange2);
     }
     .date {
