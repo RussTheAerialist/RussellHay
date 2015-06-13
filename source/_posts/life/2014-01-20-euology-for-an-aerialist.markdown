@@ -3,6 +3,7 @@ title: Eulogy for an Aerialist
 date: 2014-01-20 20:00
 summary: I say goodbye to the aerialist side of myself
 tags:
+  - body
   - move
   - aerial
 ---
