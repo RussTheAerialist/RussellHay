@@ -8,7 +8,7 @@
     "hexo-generator-sitemap": "^0",
     "hexo-renderer-jade": "*",
     "hexo-renderer-marked": "~0.1",
-    "hexo-renderer-sass": "RussTheAerialist/hexo-renderer-sass#b2e4a7a010198aebe2ed099c700c44f33f116dd0",
+    "hexo-renderer-sass": "RussTheAerialist/hexo-renderer-sass",
     "hexo-gzip": "*"
   }
 }

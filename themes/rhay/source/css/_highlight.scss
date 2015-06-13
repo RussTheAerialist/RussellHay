@@ -20,23 +20,25 @@ $highlight-purple: #cc99cc;
   }
 }
 
-.code-block {
+.code-block, td.code, figure.highlight {
   font-size: 1.25rem;
-  background: $highlight-background;
-//  margin: 0 article-padding * -1
-//  padding: 15px article-padding
   border-style: solid;
 //  border-color: color-border
   border-width: 1px 0;
   overflow: auto;
+  width: 100%;
   color: $highlight-foreground;
-  line-height: 1.5em;
-}
 
 
-.line-numbers {
-  color: #666;
-  font-size: 0.85em;
+  & .line {
+    background: $highlight-background;
+    padding: 0 5px;
+    line-height: 1.5em;
+  }
+
+  & .line:nth-child(even) {
+     background: darken($highlight-background, 5%);
+  }
 }
 
 .article-entry {
