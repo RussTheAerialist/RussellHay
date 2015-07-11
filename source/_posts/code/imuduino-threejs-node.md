@@ -13,6 +13,8 @@ tags:
   - javascript
 ---
 
+*This article was originally published on the [femto.io](http://femto.io/blogs/news/34205764-imuduino-three-js-node-awesome) blog.*
+
 A little while ago, I ordered an [IMUduino](http://femto.io) which is a tiny
 arduino clone that has a full IMU + bluetooth low energy built into it. This is
 the perfect part for my next prototype of my parkour impact sensor.
