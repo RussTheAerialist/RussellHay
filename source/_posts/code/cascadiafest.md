@@ -1,5 +1,5 @@
 ---
-title: CascadiaFest 2015 Trip Report
+title: CascadiaFest 2015
 author: Russell Hay
 date: 2015-07-12
 tags:
@@ -10,6 +10,8 @@ tags:
   - browser
   - css
 ---
+## tl;dr CascadiaFest 2015 was rad.
+
 *please note, I'll have links to all of the videos for the talks as soon as they are available.*
 
 ## Day One: CSS Day
