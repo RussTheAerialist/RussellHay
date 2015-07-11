@@ -57,10 +57,10 @@
     border-top-width: 5px;
     margin-bottom: 1em;
     li a {
-        color: #fff;
+        color: $main;
         text-decoration: none;
         &:hover {
-            color: #EAEAEA;
+            color: darken($main, 50%);
         }
     }
   }
