@@ -1,13 +1,13 @@
 
 
 var p_crossover = 0.98;
-var p_newGeneRate = 0.10;
+var p_newGeneRate = 0.1;
 var s = 1.5;
 var step_x = Math.max(s*5, (s*15));
 var step_y = Math.max(s*5, (s*15));
 var gene_size = 100;
-var population = new Array(100);
-var targetPixels, patch;
+var population = new Array(150);
+var targetPixels, patch, smallPatch;
 var pink, fadedPink;
 var printed = false;
 
@@ -77,30 +77,32 @@ Gene.prototype.pointMutation = function (rate) {
 	}
 }
 
-Gene.prototype.stepX = function (bit) {
+Gene.prototype.stepX = function (bit, scale) {
+	scale = scale || 1;
 	switch(bit) {
 		case 0:
-			return step_x;
+			return step_x * scale;
 		case 1:
-			return -step_x;
+			return -step_x * scale;
 		case 2:
-			return step_x;
+			return step_x * scale;
 		default:
-			return -step_x;
+			return -step_x *scale;
 	}
 
 }
 
-Gene.prototype.stepY = function (bit) {
+Gene.prototype.stepY = function (bit, scale) {
+	scale = scale || 1;
 	switch(bit) {
 		case 0:
-			return -step_y;
+			return -step_y * scale;
 		case 1:
-			return -step_y;
+			return -step_y * scale;
 		case 2:
-			return step_y;
+			return step_y * scale;
 		default:
-			return step_y;
+			return step_y * scale;
 	}
 }
 
@@ -159,7 +161,7 @@ Gene.prototype.calculateFitness = function (w, h, target) {
 			area = calculateArea(tri_x, tri_y);
 			totalArea += area;
 			if (x < -w || x > w || y < -h || y > h) {
-				this.doFitness(totalArea, -targetArea);
+				this.doFitness(totalArea, targetArea);
 				return;
 			}
 			min_x = Math.min(min_x, x);
@@ -176,22 +178,23 @@ Gene.prototype.calculateFitness = function (w, h, target) {
 
 
 
-Gene.prototype.draw = function(g) {
+Gene.prototype.draw = function(g, scale) {
 	// var x=-g.width/2, y=-g.height/2;
 	var x=0, y=0;
-
+	scale = scale || 1;
 
 	g.background('#efefef');
+	g.stroke('rgba(51,51,51,0.1)');
 	// g.stroke(#333333, 128);
 	// g.strokeWeight(5);
-	g.noStroke();
+	// g.noStroke();
 	g.fill(fadedPink);
 	g.beginShape(TRIANGLE_STRIP);
 	for(var i=0; i<this.gene.length; i++) {
 		for(var c=0; c<8; c+=2) {
 			var bit = ((this.gene[i]>>c)&3);
-			x += this.stepX(bit);
-			y += this.stepY(bit);
+			x += this.stepX(bit, scale);
+			y += this.stepY(bit, scale);
 
 			if (x < -g.width/2 || x > g.width/2 || y < -g.height/2 || y > g.height/2) {
 				g.endShape();
@@ -225,7 +228,7 @@ function setup() {
 
 	patch = createGraphics(width, height);
 	patch.translate(patch.width/2, patch.height/2);
-	patch.stroke('#333333');
+	
 
 	targetPixels = gene_size*8;
 	pink = color('rgba(255, 15, 144, .5)');
@@ -252,7 +255,7 @@ function draw() {
 			for(var i=0; i<population.length; i++) {
 				population[i] = Gene.random();
 			}
-		} if (key == ENTER) {
+		} if (key == 's') {
 			saveCanvas();
 		}
 	}
