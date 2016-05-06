@@ -1,5 +1,5 @@
 build: node_modules
-	node_modules/hexo/bin/hexo gzip --debug
+	node_modules/hexo/bin/hexo generate --debug
 
 dev: node_modules
 	node_modules/hexo/bin/hexo server --debug

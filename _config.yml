@@ -94,7 +94,8 @@ deploy:
   type: rsync
   host: russellhay.com
   user: rhay
-  root: /home/www/comingsoon/
+  root: /home/www/russellhay/
+  port: 22
   delete: true
   verbose: true
   ignore_errors: false
