@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+<article class="inklog">
+  <header><h1 class="title">{{ .Title }}</h1></header>
+  <div class="section-container">
+  {{ range $name, $taxonomy := .Site.Taxonomies.inks }}
+    <section class="medium section-{{ $name }}">
+      <header><h1 class="section-header">{{ $name }}</h1></header>
+      <ul>
+        {{ range $taxonomy.Pages }}
+        {{ .Render "li" }}
+        {{ end }}
+      </ul>
+
+    </section>
+  {{ end }}
+  </div>
+</article>
+{{ partial "footer.html" . }}

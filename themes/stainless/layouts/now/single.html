@@ -1,0 +1,8 @@
+{{ partial "header.html" . }}
+<article class="now">
+  <header><h1 class="title">{{ .Title }}</h1>
+    <h2 class="date">{{ dateFormat "2 Jan 2006" .Date }}</h2>
+  </header>
+  {{ .Content }}
+</article>
+{{ partial "footer.html" . }}

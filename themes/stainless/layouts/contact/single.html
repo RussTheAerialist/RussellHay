@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+<article class="page {{ .Params.pageid }}">
+  <header><h1 class="title">{{ .Title }}</h1>
+  </header>
+  {{ .Content }}
+  <div class="card-container">
+    {{ range $.Site.Data.contact.contact }}
+    <div class="card">
+      <img src="/icons/s/{{ .type }}.svg" />
+      <a href="{{ .link }}">{{ .title }}</a>
+    </div>
+    {{ end }}
+  </div>
+</article>
+{{ partial "footer.html" . }}

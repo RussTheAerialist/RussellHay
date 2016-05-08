@@ -1,0 +1,7 @@
+{{ partial "header.html" . }}
+<article class="page {{ .Params.pageid }}">
+  <header><h1 class="title">{{ .Title }}</h1>
+  </header>
+  {{ .Content }}
+</article>
+{{ partial "footer.html" . }}

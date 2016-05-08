@@ -1,0 +1,38 @@
+baseurl = "http://russellhay.com"
+languageCode = "en-us"
+title = "Russell Hay"
+theme = "stainless"
+
+[taxonomies]
+tag = "tags"
+when = "when"
+category = "categories"
+ink = "inks"
+
+[[menu.top]]
+  name = "Past"
+  weight = -100
+  identifier = "past"
+  url = "/when/past"
+
+[[menu.top]]
+  name = "Now"
+  weight = 0
+  identifier = "now"
+  url = "/now"
+
+[[menu.top]]
+  name = "Future"
+  weight = 100
+  identifier = "future"
+  url = "/when/future"
+
+[[menu.secondary]]
+  name = "About"
+  identifier = "about"
+  url = "/about"
+
+[[menu.secondary]]
+  name = "Contact"
+  identifier = "contact"
+  url = "/contact"

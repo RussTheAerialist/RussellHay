@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+<article class="video">
+  <header><h1 class="title">{{ .Title }}</h1>
+    <h2 class="date">{{ dateFormat "2 Jan 2006" .Date }}</h2>
+  </header>
+  <div class="video-container">
+    {{ if eq .Params.videotype "youtube" }}
+    <iframe src="//www.youtube.com/embed/{{ .Params.video }}" frameborder="0" width="560" height="315"></iframe>
+    {{ else if eq .Params.videotype "dailymotion" }}
+    <iframe src="//www.dailymotion.com/embed/video/{{ .Params.video }}" frameborder="0" width="560" height="315"></iframe>
+    {{ else }}
+    Unknown Video Type: {{ .Params.videotype }}
+    {{ end }}
+  </div>
+  {{ .Content }}
+</article>
+{{ partial "footer.html" . }}

@@ -1,16 +1,24 @@
-build: node_modules
-	node_modules/hexo/bin/hexo generate --debug
+THEMEDIR = themes/stainless
+SASSDIR = $(THEMEDIR)/sass
+CSSDIR = $(THEMEDIR)/static/css
+SASSFILES = $(wildcard $(SASSDIR)/*.sass) $(wildcard $(SASSDIR)/*.scss)
 
-dev: node_modules
-	node_modules/hexo/bin/hexo server --debug
+build:  css
+	hugo
+
+css: $(SASSFILES)
+	sass $(SASSDIR)/main.scss:$(CSSDIR)/style.css
+
+sasswatch:
+	sass --watch $(SASSDIR)/main.scss:$(CSSDIR)/style.css
+
+dev:
+	hugo server -v 
 
 deploy: build
-	node_modules/hexo/bin/hexo deploy
+	echo "TBD"
 
 clean:
-	node_modules/hexo/bin/hexo clean
-
-node_modules: package.json
-	npm install
+	rm -rf public
 
 .PHONY: build

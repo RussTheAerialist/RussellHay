@@ -1,0 +1,8 @@
+{{ partial "header.html" . }}
+DEFAULT
+<ul>
+  {{ range .Data.Pages.ByDate.Reverse }}
+  <li><a href="{{ .Permalink }}">{{ .Title }} - {{ .Type }}</a></li>
+  {{ end }}
+</ul>
+{{ partial "footer.html" . }}

@@ -1,0 +1,5 @@
+<li>
+{{ if isset .Params "categories" }}
+<img class="small" src="/icons/{{ .Params.categories }}.svg">
+{{ end }}
+<a href="{{ .Permalink }}">{{ .Title }}</a></li>

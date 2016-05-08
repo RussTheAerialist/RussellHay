@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <base href="{{ .Site.BaseURL }}">
+  <title>{{ .Site.Title }}</title>
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="alternative" type="application/rss+xml" title="{{ .Site.Title }}"
+        href="{{ .RSSLink }}">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://use.typekit.net/wap7kfk.js"></script>
+  <script>try {
+    Typekit.load({async: true});
+  } catch (e) {
+  }</script>
+</head>
+<body lang="en">
+<section class="content">
+  <header class="nav">
+    <div class="trigger">
+      <h1 class="site-title"><a href="/">{{ .Site.Title }}</a></h1>
+      <nav id="secondary">
+        <ul>
+          {{ range .Site.Menus.secondary }}
+          <li><a class="" href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+    <nav id="main">
+      <ul>
+        {{ range .Site.Menus.top }}
+        <li><a class="" href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </header>

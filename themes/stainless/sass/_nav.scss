@@ -1,0 +1,48 @@
+header.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+nav {
+  flex-grow: 1;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+
+    li {
+      flex: 1 1 auto;
+
+      a {
+        font-size: 1.5em;
+        display: block;
+        padding: 0 1rem;
+      }
+    }
+  }
+}
+
+.trigger:hover {
+  nav#secondary {
+    height: inherit;
+    position:absolute;
+  }
+}
+
+nav#secondary {
+  overflow: hidden;
+  width: 5rem;
+  height: 0;
+  ul {
+    flex-direction: column;
+
+    a {
+      font-size: 1rem;
+    }
+  }
+}

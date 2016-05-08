@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+<article class="single">
+<header><h1 class="title">{{ .Title }}</h1>
+  {{ if isset . "Date" }}
+  <h2 class="date">{{ dateFormat "2 Jan 2006" .Date }}</h2>
+  {{ end }}
+</header>
+{{ .Content }}
+</article>
+{{ partial "footer.html" . }}
