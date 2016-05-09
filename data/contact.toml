@@ -27,3 +27,8 @@ link = "http://google.com/+RussellHay"
 type = "06-fb"
 title = "RussellHay"
 link = "https://www.facebook.com/russellhay"
+
+[[contact]]
+type = "38-instagram"
+title = "TheRealRussellHay"
+link = "http://instagram.com/TheRealRussellHay"
