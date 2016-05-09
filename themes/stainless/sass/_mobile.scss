@@ -1,0 +1,45 @@
+.spacer {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  section > header {
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+  }
+  article {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+
+  header.nav {
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
+  article header {
+    margin-bottom: 1rem;
+  }
+
+  nav, nav#secondary {
+    height: inherit !important;
+    position: relative !important;
+    width: auto !important;
+
+    ul {
+      flex-flow: row wrap;
+      justify-content: space-between;
+
+      li {
+        width: 32%;
+        &, & a {
+          font-size: 1rem;
+          display: block;
+        }
+      }
+    }
+  }
+}
