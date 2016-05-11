@@ -1,5 +1,5 @@
 {{ partial "header.html" . }}
-<article class="page {{ .Params.pageid }}">
+<article class="page{{ if isset .Params "pageid" }} page-{{ .Params.pageid }}{{ end }}">
   <header><h1 class="title">{{ .Title }}</h1>
   </header>
   {{ .Content }}

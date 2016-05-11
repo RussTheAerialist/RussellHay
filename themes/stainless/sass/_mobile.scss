@@ -10,10 +10,15 @@
   }
   article {
     padding-left: 1rem;
+
+    section > header {
+      margin-top: 1rem !important;
+    }
   }
 
   header.nav {
     flex-direction: column;
+    align-content: flex-start;
     padding-bottom: 1rem;
   }
 

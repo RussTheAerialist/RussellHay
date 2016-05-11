@@ -13,7 +13,7 @@ sasswatch:
 	sass --watch $(SASSDIR)/main.scss:$(CSSDIR)/style.css
 
 dev:
-	hugo server -v 
+	hugo server -v --bind="0.0.0.0" --baseURL="http://10.0.0.100:1313/"
 
 deploy: build
 	echo "TBD"

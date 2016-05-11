@@ -19,7 +19,10 @@ nav {
 
 article {
   padding-left: $side-width + 1rem;
-  max-width: 50rem;
+
+  & p, & header, & ul, & ol {
+    max-width: 40rem;
+  }
 
   .title {
     font-size: 3rem;
