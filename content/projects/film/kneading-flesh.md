@@ -16,5 +16,5 @@ aliases:
   - "/art/kneading-flesh"
 categories: "films" 
 ---
-
-a 48 hour film project
+A 48 hour film project about a massage therapist who finds her need for
+meat satisfied in unusual ways.
