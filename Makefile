@@ -16,7 +16,7 @@ dev:
 	hugo server -v --bind="0.0.0.0" --baseURL="http://10.0.0.100:1313/"
 
 deploy: build
-	echo "TBD"
+	cd public && rsync -v -r . rhay@russellhay.com:/home/www/russellhay/
 
 clean:
 	rm -rf public

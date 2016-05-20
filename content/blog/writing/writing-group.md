@@ -6,7 +6,7 @@ tags = [ "writing", "craft" ]
 +++
 ## Quick Summary
 
-We are going to work through the book [Steering the Craft](https://www.amazon.com/Steering-Craft-Twenty-First-Century-Guide-Sailing-ebook/dp/B00T2414SC?ie=UTF8&keywords=steering%20the%20craft&qid=1463716718&ref_=sr_1_1&s=books&sr=1-1).  Each week we will tackle a different exercise, and this will require you to do some reading, some prewriting, and some prereading of other people's writing so we can effectively use our time for critique and an additional writing exercise in the hour allotted.  This type of session, with reading and prework, will only be one of the weekly meetings a month.
+We are going to work through the book [Steering the Craft](https://www.amazon.com/Steering-Craft-Twenty-First-Century-Guide-Sailing-ebook/dp/B00T2414SC?ie=UTF8&keywords=steering%20the%20craft&qid=1463716718&ref_=sr_1_1&s=books&sr=1-1).  Each month we will tackle a different exercise, and this will require you to do some reading, some prewriting, and some prereading of other people's writing so we can effectively use our time for critique and an additional writing exercise in the hour allotted.  This type of session, with reading and prework, will only be one of the weekly meetings a month.
 
 Much of what follows was derived from the appendix on peer writing workshops in *Steering the Craft*, distilled to be useful for the writing group.
 
