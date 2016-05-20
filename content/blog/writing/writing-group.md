@@ -40,7 +40,7 @@ As prescribed in the book, **we will follow the directions for the exercise and 
 
 This is difficult, so we follow a process.  Every person in the ground critiques every manuscript submitted (except your own), and we will go around in turn to provide the critique.  Other people who refrain from speaking when not their turn to critique.  This provides the speaker will the full focus of the group.
 
-The author of the manuscript being critiqued is asked not to speak until the end of the round of critiquing.  Afterwards, they may ask follow up questions to clarify the critique, but should strive to avoid explaining or making excuses from the critique.
+The author of the manuscript being critiqued is asked not to speak until the end of the round of critiquing.  You can, however, ask direct, simple questions that the author can answer in one sentence or less.  We limit the questioning to this style to avoid explanation or defense, which is a natural tendency, but is counter-productive to improving your writing. Afterwards, they may ask follow up questions to clarify the critique, but should strive to avoid explaining or making excuses from the critique.
 
 If you print the manuscript for critiquing and have made notes on the manuscript, you will give the author your marked up copy for them to digest in their own time.
 
@@ -50,7 +50,10 @@ First Impressions, reactions from the first reading and misunderstandings are al
 
 ## Receiving Critiques
 
-Your work needs to stand on its own.  No preface speech, and you should remain quiet until the very end of your piece's round of critiquing.
+Your work needs to stand on its own.  No preface speech, and you should remain quiet until the very end of your piece's round of critiquing, unless asked direct questions, and then you should answer as directly as possible.  Avoid the pitfall of trying to
+provide explanation.  Your work should stand by the words on the page, not your
+explanation.  Take note of all questions, because there is something you be learned
+from the questions asked.
 
 Make notes while you listen to the critique.  If something is unclear about the feedback, make a note, take your own notes as you process the critique even if your first reaction is "that's stupid."  Try to understand why the person is saying the things they are saying.
 
