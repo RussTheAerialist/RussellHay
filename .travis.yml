@@ -6,6 +6,7 @@ go:
 - tip
 install: go get -v github.com/spf13/hugo
 script:
+- mkdir -p themes/stainless/css/
 - sass themes/stainless/sass/main.scss:themes/stainless/static/css/style.css --style compressed
 - hugo
 
