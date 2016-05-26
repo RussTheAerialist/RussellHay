@@ -26,6 +26,6 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --quiet $TRAVIS_BUILD_DIR/public deploy@russellhay.com:/home/www/russellhay/
+  script: rsync -r --quiet $TRAVIS_BUILD_DIR/public/ deploy@russellhay.com:/home/www/russellhay/
   on:
     branch: production
