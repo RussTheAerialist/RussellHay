@@ -15,18 +15,17 @@ notifications:
     on_faliure: always
 
 before_install:
-- openssl aes-256-cbc -K $encrypted_0f1905a07fca_key -iv $encrypted_0f1905a07fca_iv
-  -in deploy.rsa.enc -out deploy.rsa -d
+- openssl aes-256-cbc -K $encrypted_0f1905a07fca_key -iv $encrypted_0f1905a07fca_iv -in deploy.rsa.enc -out deploy.rsa -d
 - gem install sass
 
 before_deploy:
 - eval "$(ssh-agent -s)"
-- chmod 600 $TRAVIS_BUILD_DIR/depoy.rsa
-- ssh-add $TRAVIS_BUILD/deploy.rsa
+- chmod 600 $TRAVIS_BUILD_DIR/deploy.rsa
+- ssh-add $TRAVIS_BUILD_DIR/deploy.rsa
 
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --quiet $TRAVIS_BUILD_DIR/public deploy@russellhay.com:/home/www/russellhay/
+  script: rsync -r --quiet $TRAVIS_BUILD_DIR/public/ deploy@russellhay.com:/home/www/russellhay/
   on:
     branch: production

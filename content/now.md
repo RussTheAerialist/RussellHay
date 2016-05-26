@@ -7,7 +7,7 @@ date = "2016-05-09"
 1. Preparing a talk about LEDs
 2. Building a [Hex Grid of Light up LEDs](/projects/hardware/hexboard)
 3. [PoorImpulse.co](http://poorimpulse.co)
-4. Outlining my next novel
+4. [AVRust](https://github.com/stainlessio/AVRust) - An Atmega328p emulator
 
 I'm currently living in Bellevue, WA with my [husband](http://cordcarney.com), and two dogs.
 We are considering adoption.
