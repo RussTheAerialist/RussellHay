@@ -21,7 +21,7 @@ before_install:
 before_deploy:
 - eval "$(ssh-agent -s)"
 - chmod 600 $TRAVIS_BUILD_DIR/deploy.rsa
-- ssh-add $TRAVIS_BUILD/deploy.rsa
+- ssh-add $TRAVIS_BUILD_DIR/deploy.rsa
 
 deploy:
   provider: script
