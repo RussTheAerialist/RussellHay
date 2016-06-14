@@ -147,11 +147,13 @@ body > section {
   z-index: 1;
   width: 100%;
   font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 
   &:before {
     border-top: 2px solid $faded-foreground;
     content: "";
-    margin: 0 auto;
     position: absolute;
     top: 50%; left: 0; right: 0; bottom: 0;
     width: 100%;
@@ -160,14 +162,19 @@ body > section {
 
   & span {
     background: $foreground;
-    padding-right: 1rem;
+    padding: 0 1rem;
+    font-size: 12pt;
+    line-height: 22.5pt;
+    margin-right: 2rem;
+    &:first-of-type {
+      padding-left: 0;
+      font-size: 18pt;
+      line-height: 1.25em;
+      color: $accent-color;
+    }
   }
-}
 
-h3.title {
-  font-size: 18pt;
-  line-height: 1.25em;
-  color: $accent-color;
+  a { text-decoration: none; }
 }
 
 .film {

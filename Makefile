@@ -13,6 +13,9 @@ css: $(SASSFILES)
 sasswatch:
 	sass --watch $(SASSDIR)/main.scss:$(CSSDIR)/style.css
 
+cvwatch:
+	sass --watch $(SASSDIR)/cv.scss:$(CSSDIR)/cv.css
+
 dev:
 	hugo server -v --bind="0.0.0.0" --baseURL="http://10.0.0.100:1313/"
 
