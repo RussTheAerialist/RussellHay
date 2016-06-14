@@ -35,6 +35,7 @@
   </header>
   <section class="roles">
       {{ range .Data.Pages.ByDate }}
+      {{ if .Title }}
       <article class="film">
         <header><h3 class="title line-after"><span>{{ .Title }}</span>
           <span>({{ dateFormat "2006" .Date }})</span>{{ if .Params.imdb }}
@@ -45,6 +46,7 @@
           <div class="details">{{ .Content }}</div>
         </section>
       </article>
+      {{ end }}
       {{ end }}
   </section>
 </section>
