@@ -7,6 +7,5 @@ public/
 .deploy*/
 nohup.out
 .sass-cache
-themes/stainless/static/css/style.css
-themes/stainless/static/css/style.css.map
+themes/stainless/static/css/*
 .idea

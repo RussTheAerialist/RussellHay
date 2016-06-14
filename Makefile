@@ -8,6 +8,7 @@ build:  css
 
 css: $(SASSFILES)
 	sass $(SASSDIR)/main.scss:$(CSSDIR)/style.css
+	sass $(SASSDIR)/cv.scss:$(CSSDIR)/cv.css
 
 sasswatch:
 	sass --watch $(SASSDIR)/main.scss:$(CSSDIR)/style.css

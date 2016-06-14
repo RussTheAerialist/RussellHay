@@ -8,6 +8,7 @@ install: go get -v github.com/spf13/hugo
 script:
 - mkdir -p themes/stainless/static/css/
 - sass themes/stainless/sass/main.scss:themes/stainless/static/css/style.css --style compressed
+- sass themes/stainless/sass/cv.scss:themes/stainless/static/css/cv.css --style compressed
 - hugo
 
 notifications:
