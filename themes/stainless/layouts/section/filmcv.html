@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Russell Hay CV Filmmaker in Seattle, WA</title>
+  <link rel="stylesheet" href="/css/cv.css">
+</head>
+<body>
+<header id="masthead">
+  <h1 class="block">Russell Hay</h1>
+  <h2 class="block">Cinematographer / Director / Writer</h2>
+  <div class="details block">
+    <span class="location">Seattle, WA</span>
+    <span class="phone">(206) 201-1854</span>
+    <span class="email">russell.hay - at - gmail</span>
+  </div>
+</header>
+<section id="roll">
+  <header>
+    <h3 class="line-behind"><span>Demo Reels</span></h3>
+  </header>
+  <div class="reels">
+  {{ range $.Site.Data.demoreel.demo }}
+    <div class="reel">
+      <a href="{{ .link }}">
+        <img src="{{ .thumbnail }}" title="{{ .title }}">
+        <span class="title">{{ .title }}</span>
+      </a>
+    </div>
+  {{ end }}
+  </div>
+</section>
+<section id="roles">
+  <header>
+    <h3 class="line-behind"><span>Work History</span></h3>
+  </header>
+  <section class="roles">
+      {{ range .Data.Pages.ByDate }}
+      <article class="film">
+        <header><h3 class="title line-after"><span>{{ .Title }}</span>
+          <span>({{ dateFormat "2006" .Date }})</span>{{ if .Params.imdb }}
+          <span><a href="{{ .Params.imdb }}">IMDB</a></span>{{ end}}{{ if .Params.watch }}
+          <span><a href="{{ .Params.watch }}">Watch</a></span>{{ end }}</h3></header>
+        <section>
+          <div class="positions">{{ range .Params.role }}<h4>{{ . }}</h4>{{ end }}</div>
+          <div class="details">{{ .Content }}</div>
+        </section>
+      </article>
+      {{ end }}
+  </section>
+</section>
+<section id="skills">
+  <header>
+    <h3 class="line-behind"><span>Special Skills</span></h3>
+  </header>
+  <ul class="skills">
+    {{ range $.Site.Data.skills.skills }}
+    <li class="skill">{{ .skill }}</li>
+    {{ end }}
+  </ul>
+</section>
+</body>
+
+</html>
