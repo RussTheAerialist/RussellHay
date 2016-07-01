@@ -1,7 +1,7 @@
 +++
 date = "2014-08-01"
 title = "Kneading Flesh"
-role = [ "Director of Photography", "Writer", "Actor", "Stunt Coordinator", "Producer" ]
+role = [ "Director of Photography", "Writer", "Unnamed Actor", "Stunt Coordinator", "Producer" ]
 imdb = "http://www.imdb.com/title/tt3979084/?ref_=nm_knf_t1"
 watch = "https://www.youtube.com/watch?v=Io1jx-Dc2W8"
 +++
