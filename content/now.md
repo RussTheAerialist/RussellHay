@@ -1,15 +1,18 @@
 +++
 title = "What am I doing now?"
 type = "now"
-date = "2016-06-07"
+date = "2016-07-01"
 +++
 
-1. Director of Photography for [Hana &#x1F338; v1.0](https://twitter.com/HANAv1_TheMovie)
 2. Preparing A Javascript talk for [CascadiaFest '16](http://2016.cascadiafest.org/)
 3. Building a [Hex Grid of Light up LEDs](/projects/hardware/hexboard)
 
 I'm currently living in Bellevue, WA with my [husband](http://cordcarney.com), and two dogs.
 We are considering adoption.
+
+## Recently Completed
+
+1. <del>Director of Photography</del> Jack-of-all-trades for [Hana &#x1F338; v1.0](https://twitter.com/HANAv1_TheMovie)
 
 ## On hold things because of priorities
 
