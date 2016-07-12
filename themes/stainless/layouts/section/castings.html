@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+<article class="past">
+  <header><h1 class="title">Casting Calls</h1></header>
+  <div class="section-container">
+    {{ range .Data.Pages.GroupBy "Status" }}
+    <section class="small section-{{ .Key }}">
+      <header><h1 class="section-header">{{ .Key }}</h1></header>
+      <ul>
+        {{ range .Pages }}
+        {{ .Render "li-simple" }}
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+  </div>
+</article>
+{{ partial "footer.html" . }}
