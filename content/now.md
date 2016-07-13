@@ -4,7 +4,7 @@ type = "now"
 date = "2016-07-01"
 +++
 
-2. Preparing A Javascript talk for [CascadiaFest '16](http://2016.cascadiafest.org/)
+2. <del>Preparing A</del> Freaking out about my Javascript talk for [CascadiaFest '16](http://2016.cascadiafest.org/)
 3. Building a <del>[Hex Grid of Light up LEDs](/projects/hardware/hexboard)</del> Light-up Stick
 
 I'm currently living in Bellevue, WA with my [husband](http://cordcarney.com), and two dogs.
