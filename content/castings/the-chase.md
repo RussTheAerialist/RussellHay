@@ -8,7 +8,7 @@ in Seattle’s parks, forcing one to openly admit his same-sex attraction
 and explore the thrill of movement and first love.
 
 If interested, please contact [@RussellHay](http:/twitter.com/RussellHay) on twitter, or
-email [casting calls](mailto:russell.hay+casting+chase@gmail.com) for additional information.
+email [casting calls](mailto:thechaseshortfilm@gmail.com) for additional information.
 
 ## Details
 
