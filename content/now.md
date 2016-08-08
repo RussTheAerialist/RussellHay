@@ -1,19 +1,19 @@
 +++
 title = "What am I doing now?"
 type = "now"
-date = "2016-07-01"
+date = "2016-08-08"
 +++
 
-1. <del>Preparing A</del> Freaking out about my Javascript talk for [CascadiaFest '16](http://2016.cascadiafest.org/)
-2. Building a <del>[Hex Grid of Light up LEDs](/projects/hardware/hexboard)</del> Light-up Stick
-3. [Casting](/castings/the-chase) for my short film _The Chase_
+1. [Casting](/castings/the-chase) for my short film _The Chase_
+2. Taking a month off of side projects
 
 I'm currently living in Bellevue, WA with my [husband](http://cordcarney.com), and two dogs.
 We are considering adoption.
 
 ## Recently Completed
 
-1. <del>Director of Photography</del> Jack-of-all-trades for [Hana &#x1F338; v1.0](https://twitter.com/HANAv1_TheMovie)
+1. <del>Preparing A</del> Freaking out about my Javascript talk for [CascadiaFest '16](http://2016.cascadiafest.org/)
+2. Building a <del>[Hex Grid of Light up LEDs](/projects/hardware/hexboard)</del> Light-up Stick
 
 ## On hold things because of priorities
 
