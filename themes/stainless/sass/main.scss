@@ -1,9 +1,14 @@
 $header-font-family: futura-pt,Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
 $code-font-family: monospace;
-$background-color: #dedede;
-$foreground-color: #222244;
-$link-color: lighten($foreground-color, 40%);
-$link-hover-color: saturate($link-color, 50%);
+$primary-color: #224422;
+$secondary-color: adjust_hue($primary-color, 180);
+$neutral-color: mix($primary-color, $secondary-color, 50%);
+
+$background-color: lighten($neutral-color, 90%);
+$foreground-color: mix($secondary-color, $primary-color, 10%);
+$dark-neutral: lighten(mix($primary-color, $secondary-color, 45%), 75%);
+$link-color: lighten($secondary-color, 30%);
+$link-hover-color: saturate($secondary-color, 40%);
 $side-width: 14rem;
 
 @import "reset";
@@ -15,7 +20,7 @@ a {
   &:hover {
     color: $link-hover-color;
     text-outline: saturate($link-hover-color, 50%);
-    background: darken($background-color, 5%);
+    background: $dark-neutral;
   }
 }
 
@@ -24,6 +29,12 @@ a {
 
 body {
   margin: auto 0;
+  background: $background-color;
+  color: $foreground-color;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  color: $foreground-color;
 }
 
 .site-title {
