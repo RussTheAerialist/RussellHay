@@ -3,6 +3,7 @@ title: "CascadiaFest 2015"
 date: "2015-07-12"
 aliases:
   - "/code/cascadiafest"
+  - "/blog/code/cascadiafest"
 tags:
   - "code"
   - "cascadiajs"
