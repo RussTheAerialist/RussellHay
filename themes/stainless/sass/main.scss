@@ -84,5 +84,21 @@ img[src$=".svg"] {
   }
 }
 
+.homepage {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+  & > section {
+    min-width: 50%;
+    margin-bottom: 3rem;
+
+    & > header {
+      margin-top: 0;
+    }
+  }
+}
+
 @import "card";
 @import "mobile";

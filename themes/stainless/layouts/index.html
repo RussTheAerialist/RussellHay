@@ -2,12 +2,13 @@
 <article class="homepage">
   {{ $pages := where .Data.Pages "Section" "blog" }}
 {{ range $pages.GroupByDate "2006" }}
-  <section><header><h1>{{ .Key }}</h1></header></section>
+  <section><header><h1>{{ .Key }}</h1></header>
   <ul>
   {{ range .Pages }}
     {{ .Render "li" }}
   {{ end }}
   </ul>
+  </section>
 {{ end }}
 </article>
 {{ partial "footer.html" . }}
