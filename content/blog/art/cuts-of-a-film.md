@@ -40,10 +40,10 @@ what's going on inside a character's head.
 **Match Cut** - Cutting from one shot to a similar shot. Like in Grease during
 the end of the Grease Lighting dance number. Matching action or composition.
  
-**Smash Cut** - Abrupt transitions, like making up from a nightmare, or going
+**Smash Cut** - Abrupt transitions, like waking up from a nightmare, or going
 from something intense to quiet or vice versa.
 
-**Invisible Cut** - A Cut hidden in black or in whip pans by hiding the
+**Invisible Cut** - A cut hidden in black or in whip pans by hiding the
 cut in the motion of the camera, or an object crossing the frame or the
 subject leaves the frame.  Basically, anytime you are being clever and
 hide the cut.
