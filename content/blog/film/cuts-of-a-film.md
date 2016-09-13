@@ -8,6 +8,8 @@ tags:
   - "editor"
   - "editing"
   - "movie making"
+aliases:
+  - "/blog/art/cuts-of-a-film"
 ---
 As I'm ramping up to direct my first short, one of the things I've been
 doing is watching all the videos I can on filmmaking, so I can know
