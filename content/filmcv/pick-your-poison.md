@@ -1,7 +1,7 @@
 +++
 date = "2016-09-26"
 title = "Pick Your Poison (unreleased)"
-role = [ "Producer", "Director" ]
+role = [ "Director", "Producer" ]
 +++
 A short film about two witches who lure a helpless, young construction worker
 into a deadly game.
