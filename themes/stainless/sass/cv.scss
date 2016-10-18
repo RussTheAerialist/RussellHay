@@ -178,7 +178,7 @@ body > section {
 }
 
 .film {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 
   & > section {
     display: flex;
@@ -203,6 +203,14 @@ body > section {
     width: 60%;
     line-height: 1.25em;
     padding-top: 22.5pt;
+
+    & > p {
+      margin-bottom: 1.5em;
+
+      &:last-of-type {
+        margin-bottom: 0 ;
+      }
+    }
   }
 }
 
