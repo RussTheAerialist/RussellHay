@@ -3,9 +3,9 @@ date = "2016-10-08"
 title = "For Sale By Owner"
 role = [ "Director", "Producer", "Writer" ]
 imdb = "http://www.imdb.com/title/tt6150972/?ref_=ttfc_fc_tt"
-watch_disabled = "http://vimeo.com/..."
+watch = "https://vimeo.com/187931491"
 +++
-Aspiring house flippers get more than they bargin for when they visit a house
+Aspiring house flippers get more than they bargain for when they visit a house
 for sale by owner.
 
 I directed and partially wrote this short film which was part of the 2016 Seattle
