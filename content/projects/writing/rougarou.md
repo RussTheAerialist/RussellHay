@@ -5,7 +5,6 @@ summary: A YA Urban Horror novel set in Southern Louisiana
 when: "future"
 categories: "writing"
 ---
-A novel set in the deep south, in the land of Acadia about a boy who needs
-to find out what happened to his father as he negotiates living in a new
-place, reconnecting with his half-sister, and discovering the horrors that
+A novel set in the deep south, in the land of Acadia, about a bastard
+who must join his father's family, and discovers the horrors that
 wait beneath the surface of the swamp.

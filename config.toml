@@ -22,12 +22,6 @@ ink = "inks"
   url = "/now"
 
 [[menu.top]]
-  name = "Future"
-  weight = 100
-  identifier = "future"
-  url = "/when/future"
-
-[[menu.secondary]]
   name = "About"
   identifier = "about"
   url = "/about"
