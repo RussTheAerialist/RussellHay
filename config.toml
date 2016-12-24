@@ -23,6 +23,7 @@ ink = "inks"
 
 [[menu.top]]
   name = "About"
+  weight = 100
   identifier = "about"
   url = "/about"
 
