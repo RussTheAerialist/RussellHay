@@ -4,7 +4,10 @@ addons:
 language: go
 go:
 - tip
-install: go get -v github.com/spf13/hugo
+install:
+  - go get -u -v github.com/kardianos/govendor
+  - go get -u -v github.com/spf13/hugo
+  - cd $GOPATH/src/github.com/spf13/hugo && govendor sync && go install
 script:
 - mkdir -p themes/stainless/static/css/
 - sass themes/stainless/sass/main.scss:themes/stainless/static/css/style.css --style compressed
