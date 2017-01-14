@@ -9,10 +9,11 @@ install:
   - go get -u -v github.com/spf13/hugo
   - cd $GOPATH/src/github.com/spf13/hugo && govendor sync && go install
 script:
-- mkdir -p themes/stainless/static/css/
-- sass themes/stainless/sass/main.scss:themes/stainless/static/css/style.css --style compressed
-- sass themes/stainless/sass/cv.scss:themes/stainless/static/css/cv.css --style compressed
-- hugo
+  - cd $GOPATH/src/github.com/RussTheAerialist/RussellHay
+  - mkdir -p themes/stainless/static/css/
+  - sass themes/stainless/sass/main.scss:themes/stainless/static/css/style.css --style compressed
+  - sass themes/stainless/sass/cv.scss:themes/stainless/static/css/cv.css --style compressed
+  - hugo
 
 notifications:
   email:
