@@ -4,6 +4,7 @@ title = "For Sale By Owner"
 role = [ "Director", "Producer", "Writer" ]
 imdb = "http://www.imdb.com/title/tt6150972/?ref_=ttfc_fc_tt"
 watch = "https://vimeo.com/187931491"
+released = true
 +++
 Aspiring house flippers get more than they bargain for when they visit a house
 for sale by owner.
