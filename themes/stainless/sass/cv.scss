@@ -1,23 +1,22 @@
 @import "reset";
-$accent-color: darken(#FF4B8E, 10%);
 $font-stack: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
-$primary-color: #224422;
+$primary-color: #ff186e;
 $secondary-color: adjust_hue($primary-color, 180);
 $neutral-color: mix($primary-color, $secondary-color, 50%);
 
 $foreground: lighten($neutral-color, 90%);
 $background: mix($secondary-color, $primary-color, 10%);
+$dark-neutral: darken($neutral-color, 25%);
 $faded-foreground: darken($foreground, 10%);
-$faded-background: lighten($background, 20%);
-$dark-neutral: lighten(mix($primary-color, $secondary-color, 45%), 75%);
-$link-color: lighten($secondary-color, 30%);
-$link-hover-color: saturate($secondary-color, 40%);
+$faded-background: $dark-neutral;
+$link-color: mix($primary-color, $secondary-color, 95%);
+$link-hover-color: mix($primary-color, $secondary-color, 5%);
 $accent-color: $faded-background;
 
 body {
   font-family: $font-stack;
   background: $foreground;
-  color: $background;
+  color: $dark-neutral;
   margin-bottom: 4rem;
 }
 
@@ -31,7 +30,7 @@ a {
 
 #masthead {
   width: 100%;
-  background-color: $faded-background;
+  background-color: $neutral-color;
   color: $foreground;
   display: flex;
   flex-direction: column;
