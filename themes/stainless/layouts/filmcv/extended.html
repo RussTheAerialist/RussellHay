@@ -1,0 +1,15 @@
+<article class="film">
+  <header><h3 class="title line-after"><span class="title">{{ .Title | safeHTML }}</span>
+    {{ if .Params.released }}
+    <span>{{ dateFormat "2006" .Date }}</span>{{ if .Params.imdb }}
+    <span><a href="{{ .Params.imdb }}">IMDB</a></span>{{ end}}{{ if .Params.watch }}
+    <span><a href="{{ .Params.watch }}">Watch</a></span>{{ end }}
+    {{else}}
+    <span>unreleased {{ dateFormat "2006" .Date }}</span>
+    {{end}}
+  </h3></header>
+  <section>
+    <div class="positions">{{ range .Params.role }}<h4>{{ . }}</h4>{{ end }}</div>
+    <div class="details">{{ .Content | safeHTML }}</div>
+  </section>
+</article>

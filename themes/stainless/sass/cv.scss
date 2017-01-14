@@ -239,3 +239,35 @@ body > section {
   .skill {
   }
 }
+
+.film-simple {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 1.25em;
+
+  & > header {
+    font-weight: bold;
+    font-size: 18pt;
+    color: $link-color;
+    width: 55%;
+  }
+
+  & > .metadata {
+    align-self: flex-end;
+    font-weight: bold;
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-end;
+
+    & > span {
+      margin-left: 2em;
+    }
+  }
+
+  .positions > span:first-of-type {
+    font-weight: bold;
+  }
+}

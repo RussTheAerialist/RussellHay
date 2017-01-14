@@ -1,0 +1,15 @@
+<article class="film-simple">
+  <header><h3 class="title">{{ .Title | safeHTML }}</h3></header>
+  <section class="metadata">
+    <span>{{ dateFormat "2006" .Date }}</span>
+    {{ if .Params.released }}
+    {{ if .Params.imdb }}<span><a href="{{ .Params.imdb }}">IMDB</a></span>{{ end}}{{ if .Params.watch }}
+    <span><a href="{{ .Params.watch }}">Watch</a></span>{{ end }}
+    {{ else }}
+    <span></span><span>unreleased</span>
+    {{ end }}
+  </section>
+  <section>
+    <div class="positions"><span>{{ delimit .Params.role "</span>, <span>" "</span> &amp; <span>"}}</span></div>
+  </section>
+</article>

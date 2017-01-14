@@ -14,42 +14,15 @@
     <span class="email">russell.hay - at - gmail</span>
   </div>
 </header>
-<!-- No demo reel yet 
-<section id="roll">
-  <header>
-    <h3 class="line-behind"><span>Demo Reels</span></h3>
-  </header>
-  <div class="reels">
-  {{ range $.Site.Data.demoreel.demo }}
-    <div class="reel">
-      <a href="{{ .link }}">
-        <img src="{{ .thumbnail }}" title="{{ .title }}">
-        <span class="title">{{ .title }}</span>
-      </a>
-    </div>
-  {{ end }}
-  </div>
-</section>
--->
 <section id="roles">
   <section class="roles">
-      {{ range .Data.Pages.ByDate.Reverse }}
-      {{ if .Title }}
-      <article class="film">
-        <header><h3 class="title line-after"><span class="title">{{ .Title | safeHTML }}</span>
-          {{ if .Params.released }}
-          <span>{{ dateFormat "2006" .Date }}</span>{{ if .Params.imdb }}
-          <span><a href="{{ .Params.imdb }}">IMDB</a></span>{{ end}}{{ if .Params.watch }}
-          <span><a href="{{ .Params.watch }}">Watch</a></span>{{ end }}
-          {{else}}
-          <span>unreleased {{ dateFormat "2006" .Date }}</span>
-          {{end}}
-        </h3></header>
-        <section>
-          <div class="positions">{{ range .Params.role }}<h4>{{ . }}</h4>{{ end }}</div>
-          <div class="details">{{ .Content | safeHTML }}</div>
-        </section>
-      </article>
+      {{ range $index, $page := .Data.Pages.ByDate.Reverse }}
+      {{ if $page.Title }}
+        {{ if lt $page.Date.Year 2016 }}
+          {{ $page.Render "simple" }}
+        {{ else }}
+          {{ $page.Render "extended" }}
+        {{ end }}
       {{ end }}
       {{ end }}
   </section>
