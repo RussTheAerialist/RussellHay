@@ -1,6 +1,6 @@
 +++
 date = "2016-06-01"
-title = "Corporate Diversity Video (unreleased)"
+title = "Diversity Video (unreleased)"
 role = [ "Producer", "Location Sound", "Camera" ]
 +++
 A series of recruiting interviews focusing on diversity and what it means

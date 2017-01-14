@@ -32,14 +32,11 @@
 </section>
 -->
 <section id="roles">
-  <header>
-    <h3 class="line-behind"><span>Work History</span></h3>
-  </header>
   <section class="roles">
       {{ range .Data.Pages.ByDate.Reverse }}
       {{ if .Title }}
       <article class="film">
-        <header><h3 class="title line-after"><span>{{ .Title | safeHTML }}</span>
+        <header><h3 class="title line-after"><span class="title">{{ .Title | safeHTML }}</span>
           <span>({{ dateFormat "2006" .Date }})</span>{{ if .Params.imdb }}
           <span><a href="{{ .Params.imdb }}">IMDB</a></span>{{ end}}{{ if .Params.watch }}
           <span><a href="{{ .Params.watch }}">Watch</a></span>{{ end }}</h3></header>

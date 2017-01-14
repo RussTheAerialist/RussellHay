@@ -1,9 +1,18 @@
 @import "reset";
-$foreground: #fdfdfd;
-$faded-foreground: darken($foreground, 10%);
-$background: #333333;
 $accent-color: darken(#FF4B8E, 10%);
 $font-stack: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+$primary-color: #224422;
+$secondary-color: adjust_hue($primary-color, 180);
+$neutral-color: mix($primary-color, $secondary-color, 50%);
+
+$foreground: lighten($neutral-color, 90%);
+$background: mix($secondary-color, $primary-color, 10%);
+$faded-foreground: darken($foreground, 10%);
+$faded-background: lighten($background, 20%);
+$dark-neutral: lighten(mix($primary-color, $secondary-color, 45%), 75%);
+$link-color: lighten($secondary-color, 30%);
+$link-hover-color: saturate($secondary-color, 40%);
+$accent-color: $faded-background;
 
 body {
   font-family: $font-stack;
@@ -12,9 +21,17 @@ body {
   margin-bottom: 4rem;
 }
 
+a {
+  color: $link-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
 #masthead {
   width: 100%;
-  background-color: $background;
+  background-color: $faded-background;
   color: $foreground;
   display: flex;
   flex-direction: column;
@@ -148,7 +165,7 @@ body > section {
   width: 100%;
   font-weight: bold;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-end;
 
   &:before {
@@ -170,7 +187,7 @@ body > section {
       padding-left: 0;
       font-size: 18pt;
       line-height: 1.25em;
-      color: $accent-color;
+      color: $link-color;
     }
   }
 
