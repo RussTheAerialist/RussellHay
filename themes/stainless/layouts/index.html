@@ -1,14 +1,9 @@
 {{ partial "header.html" . }}
-<article class="homepage">
-  {{ $pages := where .Data.Pages "Section" "blog" }}
-{{ range $pages.GroupByDate "2006" }}
-  <section><header><h1>{{ .Key }}</h1></header>
-  <ul>
-  {{ range .Pages }}
-    {{ .Render "li" }}
-  {{ end }}
-  </ul>
-  </section>
-{{ end }}
-</article>
+  <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
+    max-width: 100%; }
+  .embed-container iframe, .embed-container object,
+  .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+  <div class='embed-container'><iframe src='http://player.vimeo.com/video/{{ $.Site.Params.reel }}' frameborder='0'
+                                       webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
 {{ partial "footer.html" . }}

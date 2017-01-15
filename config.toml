@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Russell Hay"
 theme = "stainless"
 
+[params]
+reel = "199474573"
+
 [taxonomies]
 tag = "tags"
 when = "when"
@@ -10,10 +13,22 @@ category = "categories"
 ink = "inks"
 
 [[menu.top]]
-  name = "Past"
+  name = "Blog"
+  weight = -150
+  identifier = "blog"
+  url = "/blog"
+
+[[menu.secondary]]
+  name = "Projects"
   weight = -100
   identifier = "past"
   url = "/when/past"
+
+[[menu.top]]
+  name = "Film CV"
+  weight = -50
+  identifier = "filmcv"
+  url = "/filmcv"
 
 [[menu.top]]
   name = "Now"
