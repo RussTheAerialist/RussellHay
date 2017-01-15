@@ -5,6 +5,7 @@ theme = "stainless"
 
 [params]
 reel = "199474573"
+description = "Russell Hay is a filmmaker, developer and traceur living in the Seattle area."
 
 [taxonomies]
 tag = "tags"

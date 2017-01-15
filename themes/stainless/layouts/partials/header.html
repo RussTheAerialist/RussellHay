@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <base href="{{ .Site.BaseURL }}">
   <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+  <meta name="description" content="{{ if .Summary }}{{ .Summary }}{{ else }}{{ $.Site.Params.description }}{{ end }}" >
+  <meta name="author" content="Russell Hay">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="alternative" type="application/rss+xml" title="{{ .Site.Title }}"
         href="{{ .RSSLink }}">
