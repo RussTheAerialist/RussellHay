@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+<article class="homepage">
+  {{ range .Data.Pages.GroupByParam "inks" }}
+  <section><header><h1>{{ title .Key }}</h1></header>
+    <ul>
+      {{ range .Pages }}
+      {{ .Render "li" }}
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+</article>
+{{ partial "footer.html" . }}

@@ -9,8 +9,3 @@ date = "2016-12-23"
 3. [Batman's Little Bird](http://batmanslittlebird.com) podcast
 
 I'm currently living in Bellevue, WA with my [husband](http://cordcarney.com), and two dogs.
-
-## Recently Completed
-
-1. A month off of project.
-2. DP on The Hiker

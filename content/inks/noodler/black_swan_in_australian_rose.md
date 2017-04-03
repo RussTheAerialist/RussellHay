@@ -7,7 +7,7 @@ inks = "noodler"
 aliases = [ "/productivity/ink/noodler/black_swan_in_australian_rose" ]
 +++
 
-![Ink Sample Page for Black Swan in Australian Rose](/inks/black_swan_in_australian_rose.jpg)
+![Ink Sample Page for Black Swan in Australian Rose](/inks/noodler/black_swan_in_australian_rose.jpg)
 
 This is the first in a series of ink reviews for my fountain pen.  I'm documenting my journey to find the perfect ink to use as my daily use ink.
 

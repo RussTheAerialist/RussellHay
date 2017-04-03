@@ -7,7 +7,7 @@ inks = "noodler"
 aliases = [ "/productivity/ink/noodler/el_lawrence" ]
 +++
 
-![El Lawrence writing sample](/inks/el_lawrence.jpg)
+![El Lawrence writing sample](/inks/noodler/el_lawrence.jpg)
 
 The **El Lawrence** is inspired by the life of T.E. Lawrence, who is more
 commonly known as Lawrence of Arabia.  The bottle even has a photo of
