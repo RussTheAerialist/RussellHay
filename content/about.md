@@ -3,6 +3,8 @@ title = "About Me"
 type = "page"
 pageid = "about"
 +++
+![Me](/images/me.jpg)
+
 I'm a southern-transplant living in the greater Seattle area.  I moved
 to Seattle on a whim when I was 21, and it was the craziest and best
 decision of my life.
