@@ -251,10 +251,11 @@ body > section {
     font-weight: bold;
     font-size: 18pt;
     color: $link-color;
-    width: 55%;
+    min-width: 55%;
   }
 
   & > .metadata {
+    min-width: 45%;
     align-self: flex-end;
     font-weight: bold;
     flex: 1;
@@ -264,6 +265,16 @@ body > section {
 
     & > span {
       margin-left: 2em;
+    }
+
+    & > span:last-of-type {
+      min-width: 6rem;
+      display: flex;
+      justify-content: space-between;
+
+      & > span {
+
+      }
     }
   }
 

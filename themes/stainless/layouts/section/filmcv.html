@@ -7,7 +7,6 @@
 <body>
 <header id="masthead">
   <h1 class="block">Russell Hay</h1>
-  <h2 class="block">Cinematographer / Director / Writer</h2>
   <div class="details block">
     <span class="location">Seattle, WA</span>
     <span class="phone">(206) 201-1854</span>
@@ -18,7 +17,7 @@
   <section class="roles">
       {{ range $index, $page := .Data.Pages.ByDate.Reverse }}
       {{ if $page.Title }}
-        {{ if lt $page.Date.Year 2016 }}
+        {{ if lt $page.Date.Year 2017 }}
           {{ $page.Render "simple" }}
         {{ else }}
           {{ $page.Render "extended" }}

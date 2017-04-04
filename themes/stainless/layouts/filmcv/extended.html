@@ -4,7 +4,9 @@
     <span>{{ dateFormat "2006" .Date }}</span>{{ if .Params.imdb }}
     <span><a href="{{ .Params.imdb }}">IMDB</a></span>{{ end}}{{ if .Params.watch }}
     <span><a href="{{ .Params.watch }}">Watch</a></span>{{ end }}
-    {{else}}
+    {{ else if .Params.private }}
+    <span>not publicly available {{ dateFormat "2006" .Date }}</span>
+    {{ else }}
     <span>unreleased {{ dateFormat "2006" .Date }}</span>
     {{end}}
   </h3></header>

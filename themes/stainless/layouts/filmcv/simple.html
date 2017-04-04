@@ -2,11 +2,13 @@
   <header><h3 class="title">{{ .Title | safeHTML }}</h3></header>
   <section class="metadata">
     <span>{{ dateFormat "2006" .Date }}</span>
-    {{ if .Params.released }}
+    {{ if .Params.released }}<span>
     {{ if .Params.imdb }}<span><a href="{{ .Params.imdb }}">IMDB</a></span>{{ end}}{{ if .Params.watch }}
-    <span><a href="{{ .Params.watch }}">Watch</a></span>{{ end }}
+    <span><a href="{{ .Params.watch }}">Watch</a></span></span>{{ end }}
+    {{ else if .Params.private }}
+    <span>not public</span>
     {{ else }}
-    <span></span><span>unreleased</span>
+    <span>unreleased</span>
     {{ end }}
   </section>
   <section>
