@@ -6,9 +6,11 @@ date = "2016-12-23"
 
 ## Doing
 
-1. Film School through June
-2. Preproduction and Casting for The Chase
+2. Shooting [The Chase](http://thechaseshort.com)
 2. Revising my [rural fantasy thriller]({{< relref "projects/writing/rougarou.md" >}})
+
+## On Hold
+
 3. [Batman's Little Bird](http://batmanslittlebird.com) podcast
 
 ## Pens
