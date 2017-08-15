@@ -1,7 +1,7 @@
 +++
 title = "Current State"
 type = "now"
-date = "2017-7-14"
+date = "2017-07-14"
 +++
 
 ## Doing
