@@ -1,12 +1,13 @@
 +++
 title = "Current State"
 type = "now"
-date = "2017-07-14"
+date = "2017-09-05"
 +++
 
 ## Doing
 
 2. Post Production on [The Chase](http://thechaseshort.com)
+1. Finding a place to live
 
 ## On Hold
 
