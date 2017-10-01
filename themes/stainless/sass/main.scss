@@ -110,6 +110,14 @@ img[src$=".svg"] {
   }
 }
 
+.page-home {
+  ul {
+    display: flex;
+    list-style: none;
+    img { max-width: 120px; }
+  }
+}
+
 @import "card";
 @import "landing";
 @import "mobile";
