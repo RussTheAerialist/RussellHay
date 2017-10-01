@@ -12,6 +12,6 @@ title = "Things for my home"
 ## Kitchen
 
 * [![3 cup chemex](http://chemexcoffee-e9b.kxcdn.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/c/i/city-dweller-bundle.png)](http://www.chemexcoffeemaker.com/urban-dweller.html)
-* [![Kettle](https://www.surlatable.com/images/customers/c1079/PRO-1397769/PRO-1397769_pdp/main_variation_Default_view_1_425x425.)](https://www.surlatable.com/product/PRO-1397769/Breville+Crystal+Clear+Electric+Kettle?cat=TCA-258239_Kettles)
+* [![Kettle](https://images-na.ssl-images-amazon.com/images/I/61Qti-76wEL._SL1200_.jpg)](https://www.amazon.com/dp/B003KYSLNQ)
 * [![Grinder](https://www.surlatable.com/images/customers/c1079/PRO-1898485/PRO-1898485_pdp/zoom_variation_Default_view_1_1275x1275.)](https://www.surlatable.com/product/PRO-1898485/Breville+Smart+Grinder+Pro)
 * [![Knife Sharpener](https://images-na.ssl-images-amazon.com/images/I/718gaMNCAZL._SL1500_.jpg)](https://www.amazon.com/dp/B007IVBET0/?tag=thesweethome-20&linkCode=xm2&ascsubtag=AgEAAAAAAAAAAFReAAAAACwJkPgAAAAAWdA_2A)
