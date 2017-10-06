@@ -24,5 +24,5 @@ title = "Things for my home"
 ### Prep
 
 * [![Knife Sharpener](https://images-na.ssl-images-amazon.com/images/I/718gaMNCAZL._SL1500_.jpg)](https://www.amazon.com/dp/B007IVBET0/?tag=thesweethome-20&linkCode=xm2&ascsubtag=AgEAAAAAAAAAAFReAAAAACwJkPgAAAAAWdA_2A)
-
+* [![Knife Block](https://www.williams-sonoma.com/wsimgs/ab/images/dp/wcm/201729/0151/img69c.jpg)](https://www.williams-sonoma.com/products/wusthof-in-drawer-7-slot-knife-organizer/?pkey=cknife-storage&isx=0.0.791)
 ### Storage
