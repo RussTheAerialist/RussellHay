@@ -1,13 +1,17 @@
 +++
 title = "Current State"
 type = "now"
-date = "2017-09-05"
+date = "2017-11-01"
 +++
 
 ## Doing
 
+1. NaNoWriMo 2017
 2. Post Production on [The Chase](http://thechaseshort.com)
-1. Finding a place to live
+
+## Upcoming
+
+1. Daily openFrameworks sketches every day in December
 
 ## On Hold
 
