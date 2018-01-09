@@ -1,7 +1,7 @@
 ---
 title: "Kitfo"
 date: "2017-10-22"
-role: [ "cinematographer" ]
+role: [ "Cinematographer" ]
 released: false
 ---
 An Ethiopian woman struggles with the clash between her cultural identity and her queer identity as
