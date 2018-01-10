@@ -1,7 +1,7 @@
 ---
 title: "The Chase"
 date: "2017-07-29"
-roles: [ "Director", "Writer", "Producer" ]
+role: [ "Director", "Writer", "Producer" ]
 released: false
 ---
 Two boys explore a developing love interest through movement and parkour.
