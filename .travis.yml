@@ -3,7 +3,7 @@ addons:
 
 language: go
 go:
-- tip
+- "~1.0"
 install:
   - go get -u -v github.com/spf13/hugo
 script:
