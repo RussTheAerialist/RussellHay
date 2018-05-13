@@ -25,9 +25,14 @@
         </div>
   </section>
   <section class="body">
-    {{ range $index, $page := .Data.Pages.ByDate.Reverse }}
+    {{ range .Data.Pages.GroupByParam "project_type" }}
+    <section class="project_type {{ .Key }}">
+      <header><h1>{{ .Key | title }}</h1></header>
+    {{ range $index, $page := .Pages.ByDate.Reverse }}
       {{ $page.Render "simple" }}
     {{ end }}
+  </section>
+  {{ end }}
   </section>
   </div>
 </body>

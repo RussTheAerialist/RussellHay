@@ -2,6 +2,7 @@
 title: "The Chase"
 date: "2018-05-12"
 role: [ "Director", "Writer", "Producer" ]
+project_type: "narrative short"
 released: false
 ---
 Two boys explore a developing love interest through movement and parkour.

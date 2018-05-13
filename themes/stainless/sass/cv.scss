@@ -5,6 +5,7 @@ $highlight: darken(adjust-hue($background, 180deg), 60%);
 $foreground: darken(mix($background, $highlight), 70%);
 $border-size: 0.75rem / 2;
 $border-color: mix($background, $highlight, 90%);
+$border-step-size: 360deg / 5;
 
 body {
   min-height: 100%;
@@ -51,7 +52,16 @@ a {
   .body {
     display: grid;
     grid-row-gap: 1.5em;
+    grid-template-columns: 50% auto;
+    justify-items: start;
+    align-items: start;
+  }
 
+  .project_type {
+    display: grid;
+    grid-row-gap: 1.5em;
+    justify-items: start;
+    align-items: start;
   }
 
   .film-simple {
@@ -59,8 +69,7 @@ a {
     grid-template-columns: 8rem auto auto;
     grid-template-rows: auto auto;
     align-items: start;
-
-    // & > * { border: 1px solid red;}
+    justify-items: start;
 
     .title {
       font-size: 1.5em;
@@ -92,4 +101,31 @@ a {
       
     }
   }
+}
+
+.project_type > header {
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+@mixin project_type($degTurn) {
+    & > .film-simple > .title,
+    &> .film-simple > .positions {
+    border-left-color: adjust-hue($border-color, $border-step-size * $degTurn);
+  }
+
+  & > .film-simple a,
+  & > header {
+    color: adjust-hue($highlight, $border-step-size * $degTurn);
+  }
+}
+
+.corporate { @include project_type(0); }
+.music { @include project_type(2); }
+.documentary { @include project_type(3); }
+.narrative {
+  @include project_type(1); 
+  grid-row: 1 / span 3;
 }

@@ -5,6 +5,7 @@ role = [ "Director of Photography", "Writer", "Producer" ]
 imdb = "http://www.imdb.com/title/tt4157856/?ref_=nm_knf_t2"
 watch = "https://www.youtube.com/watch?v=NC3t6fc7G4o"
 released = true
+project_type = "narrative short"
 +++
 For the 48hr horror film project in the creature feature genre.  This film is about a dark beast being awoken by a scheming
 production assistant, channeling the anger of the director to raise the beast..

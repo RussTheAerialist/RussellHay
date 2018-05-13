@@ -3,6 +3,7 @@ date = "2016-12-04"
 title = "The Hiker"
 role = [ "Cinematographer", "Gaffer" ]
 released = false
+project_type = "narrative short"
 +++
 A short film noir that usurps the traditional gender roles set in the pacific northwest.
 
