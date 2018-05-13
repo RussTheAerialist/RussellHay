@@ -5,7 +5,7 @@ $highlight: darken(adjust-hue($background, 180deg), 60%);
 $foreground: darken(mix($background, $highlight), 70%);
 $border-size: 0.75rem / 2;
 $border-color: mix($background, $highlight, 90%);
-$border-step-size: 360deg / 5;
+$border-step-size: 360deg / 6;
 
 body {
   min-height: 100%;
@@ -125,7 +125,8 @@ a {
 .corporate { @include project_type(0); }
 .music { @include project_type(2); }
 .documentary { @include project_type(3); }
+.series { @include project_type(4); }
 .narrative {
   @include project_type(1); 
-  grid-row: 1 / span 3;
+  grid-row: 1 / span 5;
 }
