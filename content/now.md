@@ -1,20 +1,12 @@
 +++
 title = "Current State"
 type = "now"
-date = "2018-01-29"
+date = "2019-05-22"
 +++
 
 ## Doing
 
-1. Post Production on [The Chase](http://thechaseshort.com)
-2. Weekly Twitch Streaming of Rust and Creative Coding [stainlessio](http://twitch.tv/stainlessio)
-
-## Programming Stats
-
-### Overall
-
-<figure><embed src="https://wakatime.com/share/@bcb968a3-8411-4c5f-b500-f525a15dd8e4/d92071eb-d482-4de9-839a-baf88aaa1996.svg"></embed></figure>
-
-### By Language
-
-<figure><embed src="https://wakatime.com/share/@bcb968a3-8411-4c5f-b500-f525a15dd8e4/71813d12-53f5-42f6-bdac-3cd17afd1116.svg"></embed></figure>
+1. Soccer Camp
+2. Building a new productivity suite to sell
+3. Buying a house
+4. Weekly Improv performances
